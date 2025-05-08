@@ -85,16 +85,15 @@ the operation is not guaranteed with other configurations.
 
 ### Before to start
 
-The easiest way for testing this algorithm is to create a `.mat` file. It must contain:
+
+This algorithm has been tested on the dataset provided by the aforementioned toolbox, but it can easily be applied to any `.mat` file organized as follows:
 
 *   `I_MS_LR`: Original Hyperspectral Stack in channel-last configuration (Dimensions: H x W x B);
 *   `I_MS`: Upsampled version of original Hyperspectral Stack in channel-last configuration (Dimensions: HR x WR x B);
 *   `I_PAN`: Original Panchromatic band, without the third dimension (Dimensions: HR x WR).
-*   `Wavelengths`: Array of wavelengths (Dimensions: B x 1)
+*   `wavelengths`: Array of wavelengths (Dimensions: B x 1)
 
 where R is the ratio of the sensor.
-
-Please refer to `--help` for more details.
 
 ### Testing
 
