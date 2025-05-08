@@ -11,7 +11,7 @@ config = {
     'save_weights': True,
     'save_weights_path': 'weights',
     'save_training_stats': False,
-    'compute_quality_indexes': True,
+    'compute_quality_indexes': False,
 
     # Training hyperparameters
     'learning_rate': 0.00001,
@@ -32,11 +32,8 @@ config = {
     'net_scope': 6,
     'ms_scope': 1,
 
-    #'hp_fr': [0.65, 0.90, 2, 1.007, 20, 30],
-    #'hp_rr': [0.62, 0.90, 1, 1.003, 5, 30],
-
-    'hp_fr': [0.90, 0.90, 2, 1.007, 5, 30],
-    'hp_rr': [0.90, 0.90, 1, 1.003, 5, 30],
+    'hp_fr': [0.65, 0.90, 2, 1.007, 20, 30],
+    'hp_rr': [0.62, 0.90, 1, 1.003, 5, 30],
 
     'num_models': 10, # Number of trained models for model ensemble
     'me_epochs': 10, # Number of epochs for model ensemble

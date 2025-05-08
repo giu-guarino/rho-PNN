@@ -1,6 +1,6 @@
 # Zero-Shot Hyperspectral Pansharpening Using Hysteresis-Based Tuning for Spectral Quality Control
 
-[Zero-Shot Hyperspectral Pansharpening Using Hysteresis-Based Tuning for Spectral Quality Control](https://ieeexplore.ieee.org/document/10341305) (  [ArXiv](https://www.google.com/url?q=http://arxiv.org/abs/2311.06510&source=gmail&ust=1700026852089000&usg=AOvVaw0bA5hS9pYGvnMPpmkPF2LT) ) introduces **rho-PNN**, a Deep Learning method that use a simple CNN model propagation strategy for Hyperspectral Pansharpening. Starting from an initial weights configuration, each band is pansharpened refining the model tuned on the preceding one. In this way, R-PNN is able to work with hyperspectral images with an arbitrary number of bands. The proposed method has been tested on real hyperspectral images (PRISMA Dataset), both Full and Reduced resoution and then compared with several Pansharpening methods, both model-based and Deep-Learning.
+[Zero-Shot Hyperspectral Pansharpening Using Hysteresis-Based Tuning for Spectral Quality Control](https://ieeexplore.ieee.org/document/10341305) (  [ArXiv](https://www.google.com/url?q=http://arxiv.org/abs/2311.06510&source=gmail&ust=1700026852089000&usg=AOvVaw0bA5hS9pYGvnMPpmkPF2LT) ) introduces **rho-PNN**, a hyperspectral pansharpening method that ensures uniform spectral quality across all bands. A single lightweight neural network is used, with weights that dynamically adapt to each band during processing. To promote fast spectral convergence, a hysteresis-inspired strategy alternates the activation of the spatial loss during fine-tuning. Additionally, a new spatial loss is introduced to account for nonlinear dependencies between the panchromatic and spectral bands. The resulting method is fully unsupervised, requires no pretraining, and remains flexible and computationally efficient.The proposed method has been evaluated on real hyperspectral images from the PRISMA dataset, at both full and reduced resolutions, and compared against several pansharpening approaches, both model-based and deep learning, using the recently released hyperspectral pansharpening [toolbox](https://github.com/matciotola/hyperspectral_pansharpening_toolbox).
 
 ## Scheme overview 
 ![rho-PNN architecture](Arch.png)
@@ -35,12 +35,12 @@ If you use rho-PNN in your research, please use the following BibTeX entry.
 
 ## License
 
-Copyright (c) 2023 Image Processing Research Group of University Federico II of Naples ('GRIP-UNINA').
+Copyright (c) 2025 Image Processing Research Group of University Federico II of Naples ('GRIP-UNINA').
 All rights reserved.
 This software should be used, reproduced and modified only for informational and nonprofit purposes.
 
 By downloading and/or using any of these files, you implicitly agree to all the
-terms of the license, as specified in the document [`LICENSE`](https://github.com/giu-guarino/R-PNN/blob/main/LICENSE.txt)
+terms of the license, as specified in the document [`LICENSE`](https://github.com/giu-guarino/rho-PNN/blob/main/LICENSE.txt)
 (included in this package)
 
 ## Prerequisites
@@ -98,17 +98,16 @@ Please refer to `--help` for more details.
 
 ### Testing
 
-This project provide a set of weights obtained from a pre-training procedure described in the paper. You can directly start from this configuration using the command:
+This project provides a method which works completely from scratch. This means that you don't need any training data, so you can directly start the proposed configuration using the command:
+
+<!---->
 
     python test.py -i path/to/file.mat
-    
+
 where `path/to/file.mat` can be any dataset (with any number of bands) organized as described before.
 
-Several options are possible. Please refer to the parser help for more details:
-
-    python test.py -h
-
+You can easily change the spectral quality requirement by modifying the hyperparameters in the `config_dict.py` file.
 
 ## Dataset
 
-You can find the dataset used in this work at this [link](https://openremotesensing.net/knowledgebase/panchromatic-and-hyperspectral-image-fusion-outcome-of-the-2022-whispers-hyperspectral-pansharpening-challenge/)
+Instructions for downloading the dataset used in this work can be found at the following [link](https://github.com/matciotola/hyperspectral_pansharpening_toolbox)
