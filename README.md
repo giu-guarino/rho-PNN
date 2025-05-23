@@ -1,6 +1,6 @@
 # Zero-Shot Hyperspectral Pansharpening Using Hysteresis-Based Tuning for Spectral Quality Control
 
-[Zero-Shot Hyperspectral Pansharpening Using Hysteresis-Based Tuning for Spectral Quality Control](https://ieeexplore.ieee.org/document/10341305) (  [ArXiv](https://www.google.com/url?q=http://arxiv.org/abs/2311.06510&source=gmail&ust=1700026852089000&usg=AOvVaw0bA5hS9pYGvnMPpmkPF2LT) ) introduces **rho-PNN**, a hyperspectral pansharpening method that ensures uniform spectral quality across all bands. A single lightweight neural network is used, with weights that dynamically adapt to each band during processing. To promote fast spectral convergence, a hysteresis-inspired strategy alternates the activation of the spatial loss during fine-tuning. Additionally, a new spatial loss is introduced to account for nonlinear dependencies between the panchromatic and spectral bands. The resulting method is fully unsupervised, requires no pretraining, and remains flexible and computationally efficient.The proposed method has been evaluated on real hyperspectral images from the PRISMA dataset, at both full and reduced resolutions, and compared against several pansharpening approaches, both model-based and deep learning, using the recently released hyperspectral pansharpening [toolbox](https://github.com/matciotola/hyperspectral_pansharpening_toolbox).
+Zero-Shot Hyperspectral Pansharpening Using Hysteresis-Based Tuning for Spectral Quality Control(  [ArXiv](https://arxiv.org/abs/2505.16658) ) introduces **rho-PNN**, a hyperspectral pansharpening method that ensures uniform spectral quality across all bands. A single lightweight neural network is used, with weights that dynamically adapt to each band during processing. To promote fast spectral convergence, a hysteresis-inspired strategy alternates the activation of the spatial loss during fine-tuning. Additionally, a new spatial loss is introduced to account for nonlinear dependencies between the panchromatic and spectral bands. The resulting method is fully unsupervised, requires no pretraining, and remains flexible and computationally efficient.The proposed method has been evaluated on real hyperspectral images from the PRISMA dataset, at both full and reduced resolutions, and compared against several pansharpening approaches, both model-based and deep learning, using the recently released hyperspectral pansharpening [toolbox](https://github.com/matciotola/hyperspectral_pansharpening_toolbox).
 
 ## Scheme overview 
 ![rho-PNN architecture](Arch.png)
@@ -10,15 +10,15 @@
 If you use rho-PNN in your research, please use the following BibTeX entry.
 
 ```
-@ARTICLE{10341305,
-  author={Guarino, Giuseppe and Ciotola, Matteo and Vivone, Gemine and Scarpa, Giuseppe},
-  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={Band-wise Hyperspectral Image Pansharpening using CNN Model Propagation}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-1},
-  doi={10.1109/TGRS.2023.3339337}}
+@misc{guarino2025rhopnn,
+      title={Zero-Shot Hyperspectral Pansharpening Using Hysteresis-Based Tuning for Spectral Quality Control}, 
+      author={Giuseppe Guarino and Matteo Ciotola and Gemine Vivone and Giovanni Poggi and Giuseppe Scarpa},
+      year={2025},
+      eprint={2505.16658},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.16658}, 
+}
 ```
 
 ## Team members
