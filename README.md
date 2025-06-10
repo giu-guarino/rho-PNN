@@ -101,7 +101,7 @@ This project provides a method which works completely from scratch. This means t
 
 <!---->
 
-    python test.py -i path/to/file.mat
+    python main.py -i path/to/file.mat
 
 where `path/to/file.mat` can be any dataset (with any number of bands) organized as described before.
 
