@@ -110,3 +110,7 @@ You can easily change the spectral quality requirement by modifying the hyperpar
 ## Dataset
 
 Instructions for downloading the dataset used in this work can be found at the following [link](https://github.com/matciotola/hyperspectral_pansharpening_toolbox)
+
+## Results
+
+The outcomes produced by rho-PNN are available for download at the following [link](https://www.grip.unina.it/download/prog/Results_rho-PNN/)
