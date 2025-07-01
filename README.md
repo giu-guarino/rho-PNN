@@ -10,15 +10,17 @@ Zero-Shot Hyperspectral Pansharpening Using Hysteresis-Based Tuning for Spectral
 If you use rho-PNN in your research, please use the following BibTeX entry.
 
 ```
-@misc{guarino2025rhopnn,
-      title={Zero-Shot Hyperspectral Pansharpening Using Hysteresis-Based Tuning for Spectral Quality Control}, 
-      author={Giuseppe Guarino and Matteo Ciotola and Gemine Vivone and Giovanni Poggi and Giuseppe Scarpa},
-      year={2025},
-      eprint={2505.16658},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2505.16658}, 
-}
+@ARTICLE{guarino2025rhopnn,
+  author={Guarino, Giuseppe and Ciotola, Matteo and Vivone, Gemine and Poggi, Giovanni and Scarpa, Giuseppe},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Zero-Shot Hyperspectral Pansharpening Using Hysteresis-Based Tuning for Spectral Quality Control}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Pansharpening;Training;Hyperspectral imaging;Optimization;Spatial resolution;Neural networks;Space missions;Distortion;Benchmark testing;Symbols;Hyperspectral images;image fusion;pansharpening;spectral unmixing;zero-shot learning;self-supervised learning},
+  doi={10.1109/TGRS.2025.3583877}}
+
 ```
 
 ## Team members
