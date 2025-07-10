@@ -15,11 +15,12 @@ If you use rho-PNN in your research, please use the following BibTeX entry.
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
   title={Zero-Shot Hyperspectral Pansharpening Using Hysteresis-Based Tuning for Spectral Quality Control}, 
   year={2025},
-  volume={},
+  volume={63},
   number={},
-  pages={1-1},
-  keywords={Pansharpening;Training;Hyperspectral imaging;Optimization;Spatial resolution;Neural networks;Space missions;Distortion;Benchmark testing;Symbols;Hyperspectral images;image fusion;pansharpening;spectral unmixing;zero-shot learning;self-supervised learning},
+  pages={1-19},
+  keywords={Pansharpening;Training;Hyperspectral imaging;Optimization;Spatial resolution;Neural networks;Space missions;Distortion;Benchmark testing;Symbols;Hyperspectral (HS) images;image fusion;pansharpening;self-supervised learning;spectral unmixing;zero-shot learning},
   doi={10.1109/TGRS.2025.3583877}}
+
 
 ```
 
